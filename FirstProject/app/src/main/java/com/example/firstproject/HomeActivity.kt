@@ -3,6 +3,7 @@ package com.example.firstproject
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -10,7 +11,10 @@ class HomeActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home)
-
+    val userId = intent.getStringExtra("user_id") // 아이디 정보 추출
+        //표시
+        val textViewUserId = findViewById<TextView>(R.id.textView6)
+        textViewUserId.text = "ID: $userId"
     }
 
     fun home(v:View) {

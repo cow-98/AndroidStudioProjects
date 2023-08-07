@@ -30,7 +30,9 @@ class SignInActivity : AppCompatActivity() {
         Toast.makeText(getApplicationContext(), "자기 소개 페이지로 갈게요!",
         Toast.LENGTH_SHORT).show();
             val intent = Intent(this, HomeActivity::class.java)
+            intent.putExtra("user_id",username)
             startActivity(intent)
+
     }
     }
     fun doActions(v:View){
