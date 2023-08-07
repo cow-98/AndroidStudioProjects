@@ -11,8 +11,8 @@ class HomeActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home)
-    val userId = intent.getStringExtra("user_id") // 아이디 정보 추출
-        //표시
+    val userId = intent.getStringExtra("user_id")
+
         val textViewUserId = findViewById<TextView>(R.id.textView6)
         textViewUserId.text = "ID: $userId"
     }
