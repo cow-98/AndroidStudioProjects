@@ -33,18 +33,14 @@ class SignUpActivity : AppCompatActivity() {
         if (name.isEmpty() || username.isEmpty() || password.isEmpty()) {
             Toast.makeText(this, "입력되지 않은 정보가 있어요!",Toast.LENGTH_SHORT).show()
         } else{
-            val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
-            val editor = sharedPreferences.edit()
-            val username = "junseon"
-            editor.putString("username","junseon")
-            editor.apply()
-
                 Toast.makeText(
                     getApplicationContext(), "회원가입 성공!",
                     Toast.LENGTH_SHORT
                 ).show();
                 val intent = Intent(this, SignInActivity::class.java)
                 finish()
+
+
             }
 
         }

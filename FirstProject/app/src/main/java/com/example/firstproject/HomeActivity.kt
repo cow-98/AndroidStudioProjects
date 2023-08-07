@@ -11,10 +11,11 @@ class HomeActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home)
-    val userId = intent.getStringExtra("user_id")
-
+         val userId = intent.getStringExtra("user_id")
         val textViewUserId = findViewById<TextView>(R.id.textView6)
         textViewUserId.text = "ID: $userId"
+
+
     }
 
     fun home(v:View) {
