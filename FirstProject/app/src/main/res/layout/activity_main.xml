@@ -83,7 +83,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/kotra"
-        android:onClick="doAction"
+
         android:text="로그인"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +101,7 @@
         android:fontFamily="@font/kotra"
         android:text="회원가입"
         android:textSize="20sp"
-        android:onClick="doActions"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
