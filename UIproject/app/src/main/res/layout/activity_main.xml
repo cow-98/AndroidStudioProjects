@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+
+   <ImageButton
+       android:id="@+id/btn_home"
+       android:layout_width="22dp"
+       android:layout_height="22dp"
+       android:padding="1dp"
+       android:src="@drawable/home"
+       android:layout_marginTop="16dp"
+       android:layout_marginLeft="20dp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:background="#FFFFFF" />
+
+   <TextView
+       android:id="@+id/tv_main"
+       android:layout_width="67dp"
+       android:layout_height="27dp"
+       android:layout_marginTop="14dp"
+       android:fontFamily="@font/notosanskr_regular"
+       android:includeFontPadding="false"
+       android:lineHeight="27dp"
+       android:text="AI 서비스"
+       android:textAlignment="center"
+       android:textSize="17dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+   <ImageButton
+       android:id="@+id/btn_detection"
+       android:layout_width="25dp"
+       android:layout_height="25dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="268dp"
+      android:src="@drawable/detection"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:background="#FFFFFF"/>
+
+   <ImageView
+       android:layout_width="15dp"
+       android:layout_height="15dp"
+       android:layout_marginTop="6dp"
+       android:layout_marginRight="52dp"
+       android:src="@drawable/bedge_new"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <ImageButton
+       android:layout_width="25dp"
+       android:layout_height="25dp"
+      android:src="@drawable/setting"
+      android:background="#FFFFFF"
+      android:layout_marginTop="15dp"
+      android:layout_marginRight="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+   <TextView
+       android:id="@+id/linear_main"
+       android:layout_width="match_parent"
+       android:layout_height="54dp"
+      android:layout_marginTop="55dp"
+      app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+      android:background="#1568DD"/>
+
+   <TextView
+       android:id="@+id/linear_tv"
+       android:layout_width="76dp"
+       android:layout_height="54dp"
+      app:layout_constraintTop_toTopOf="@+id/linear_main"
+      app:layout_constraintBottom_toBottomOf="@+id/linear_main"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginLeft="17dp"/>
+
+
+
+       <TextView
+           android:id="@+id/tv_ai"
+           android:layout_width="43dp"
+           android:layout_height="24dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginLeft="16.5dp"
+          android:layout_marginBottom="14dp"
+          android:text="AI검색"
+          android:fontFamily="@font/notosanskr_regular"
+          android:textFontWeight="700"
+          android:textSize="15dp"
+          android:lineHeight="24dp"
+           android:textAlignment="center"
+           android:includeFontPadding="false"
+          android:textColor="@color/white"
+          app:layout_constraintTop_toTopOf="@+id/linear_tv"
+          app:layout_constraintBottom_toBottomOf="@id/linear_tv"
+          app:layout_constraintStart_toStartOf="@id/linear_main"
+          app:layout_constraintEnd_toEndOf="@id/linear_tv"/>
+
+   <TextView
+       android:id="@+id/linear_tv2"
+       android:layout_width="137dp"
+       android:layout_height="54dp"
+      android:layout_marginLeft="113dp"
+       android:layout_marginRight="110dp"
+       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="@id/linear_tv"
+      app:layout_constraintBottom_toBottomOf="@id/linear_tv"
+      app:layout_constraintStart_toStartOf="parent" />
+
+
+   <TextView
+       android:layout_width="134dp"
+       android:layout_height="24dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginLeft="1dp"
+      android:textFontWeight="500"
+      android:textSize="15dp"
+      android:lineHeight="24dp"
+      android:textAlignment="center"
+       android:includeFontPadding="false"
+       android:fontFamily="@font/notosanskr_regular"
+      android:text="내 매장 CareReport"
+      app:layout_constraintTop_toTopOf="@id/linear_tv2"
+      app:layout_constraintBottom_toBottomOf="@id/linear_tv2"
+      app:layout_constraintStart_toStartOf="@id/linear_tv2"
+      app:layout_constraintEnd_toEndOf="@id/linear_tv2"
+      app:layout_goneMarginTop="16dp"
+      android:layout_marginBottom="14dp"
+      app:layout_goneMarginLeft="1dp"
+      android:layout_marginRight="2dp"/>
+
+   <TextView
+      android:id="@+id/linear_tv3"
+       android:layout_width="72dp"
+       android:layout_height="54dp"
+      android:layout_marginLeft="21dp"
+      android:layout_marginRight="17dp"
+      app:layout_goneMarginLeft="21dp"
+      app:layout_constraintTop_toTopOf="@id/linear_main"
+      app:layout_constraintBottom_toBottomOf="@id/linear_main"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/linear_tv2"/>
+
+   <TextView
+       android:layout_width="69dp"
+       android:layout_height="24dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginLeft="2dp"
+       android:fontFamily="@font/notosanskr_regular"
+      android:textFontWeight="500"
+      android:textSize="15dp"
+      android:lineHeight="24dp"
+      android:textAlignment="center"
+      android:text="피플카운팅"
+       android:includeFontPadding="false"
+      app:layout_constraintTop_toTopOf="@id/linear_tv3"
+      app:layout_constraintBottom_toBottomOf="@id/linear_tv3"
+      app:layout_constraintStart_toStartOf="@id/linear_tv3"
+      app:layout_constraintEnd_toEndOf="@id/linear_tv3"
+      app:layout_goneMarginTop="16dp"
+      android:layout_marginBottom="14dp"
+      app:layout_goneMarginLeft="2dp"
+      android:layout_marginRight="1dp"/>
+
+   <View
+       android:layout_width="76dp"
+       android:layout_height="3dp"
+      android:layout_marginTop="51dp"
+      app:layout_constraintBottom_toBottomOf="@id/linear_tv"
+      app:layout_constraintStart_toStartOf="@id/linear_tv"
+      android:background="@color/white"/>
+   
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+      app:layout_constraintBottom_toTopOf="@+id/tv_main2"
+      app:layout_constraintStart_toStartOf="parent"
+      android:background="#FFFFFF"/>
+   <TextView
+       android:id="@+id/tv_main2"
+       android:layout_width="match_parent"
+       android:layout_height="352dp"
+      app:layout_constraintTop_toBottomOf="@id/linear_main"
+       android:background="#1568DD"/>
+
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/const_main"
+       android:layout_width="259dp"
+       android:layout_height="28dp"
+      app:layout_constraintTop_toBottomOf="@id/linear_main"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="17dp"
+       android:background="@drawable/round_button"
+       android:backgroundTint="#093383">
+      
+      <Button
+          android:id="@+id/const_btn1"
+          android:layout_width="90dp"
+          android:layout_height="28dp"
+         app:backgroundTint="@color/white"
+         app:layout_constraintTop_toTopOf="@id/const_main"
+         app:layout_constraintBottom_toBottomOf="@id/const_main"
+         app:layout_constraintStart_toStartOf="@id/const_main"
+          android:background="@drawable/round_button"></Button>
+      
+      <TextView
+          android:layout_width="53dp"
+          android:layout_height="20dp"
+         android:layout_marginTop="4dp"
+         android:layout_marginLeft="19dp"
+         app:layout_constraintTop_toTopOf="@id/const_btn1"
+         app:layout_constraintStart_toStartOf="@id/const_btn1"
+          android:text="사람/차량"
+          android:textColor="#093383"
+          android:fontFamily="@font/notosanskr_regular"
+          android:textSize="13dp"
+          android:lineHeight="20dp"
+          android:textAlignment="center"
+          android:textFontWeight="700"
+          android:includeFontPadding="false"></TextView>
+      
+      <Button
+          android:id="@+id/const_btn2"
+          android:layout_width="90dp"
+          android:layout_height="28dp"
+         app:backgroundTint="#00FF0000"
+         android:background="@drawable/round_button"
+         app:layout_constraintTop_toTopOf="@id/const_main"
+         app:layout_constraintBottom_toBottomOf="@id/const_main"
+         app:layout_constraintStart_toStartOf="@id/const_main"
+         android:layout_marginLeft="85dp"></Button>
+      
+      <TextView
+          android:layout_width="48dp"
+          android:layout_height="20dp"
+         android:layout_marginTop="4dp"
+         android:layout_marginLeft="21dp"
+          app:layout_constraintTop_toTopOf="@id/const_btn2"
+          app:layout_constraintStart_toStartOf="@id/const_btn2"
+         android:text="영역지정"
+         android:textColor="#CCCCCC"
+         android:fontFamily="@font/notosanskr_regular"
+         android:textSize="13dp"
+         android:lineHeight="20dp"
+         android:textAlignment="center"
+          android:includeFontPadding="false"></TextView>
+      
+      <Button
+         android:id="@+id/const_btn3"
+          android:layout_width="90dp"
+          android:layout_height="28dp"
+         app:backgroundTint="#00FF0000"
+         android:background="@drawable/round_button"
+         app:layout_constraintTop_toTopOf="@id/const_main"
+         app:layout_constraintBottom_toBottomOf="@id/const_main"
+         app:layout_constraintStart_toStartOf="@id/const_main"
+         android:layout_marginLeft="169dp"></Button>
+      
+      <TextView
+          android:layout_width="53dp"
+          android:layout_height="20dp"
+         android:layout_marginTop="4dp"
+         android:layout_marginLeft="19dp"
+         app:layout_constraintTop_toTopOf="@id/const_btn3"
+         app:layout_constraintStart_toStartOf="@id/const_btn3"
+         android:text="침입/방문"
+         android:textColor="#CCCCCC"
+         android:fontFamily="@font/notosanskr_regular"
+         android:textSize="13dp"
+         android:lineHeight="20dp"
+         android:textAlignment="center"
+         android:includeFontPadding="false"></TextView>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+   
+   <TextView
+       android:layout_width="170dp"
+       android:layout_height="44dp"
+      android:layout_marginTop="58dp"
+      android:layout_marginLeft="34dp"
+      android:text="사람/차량 검색으로    찾아볼까요?"
+      android:fontFamily="@font/notosanskr_regular"
+      android:textFontWeight="350"
+      android:textSize="18dp"
+      android:lineHeight="22dp"
+      android:includeFontPadding="false"
+      android:textColor="#FFFFFF"
+      app:layout_constraintTop_toBottomOf="@id/linear_main"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+
+   <ImageView
+       android:layout_width="108dp"
+       android:layout_height="85dp"
+       android:layout_marginTop="52dp"
+       android:layout_marginLeft="245dp"
+       app:layout_constraintTop_toBottomOf="@+id/linear_main"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:src="@drawable/character"
+       android:elevation="1dp"/>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/const_main2"
+       android:layout_width="330dp"
+       android:layout_height="210dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="@+id/tv_main2"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginBottom="15dp"
+      android:background="@drawable/round_button"
+      android:backgroundTint="@color/white">
+
+      <LinearLayout
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+         android:background="@drawable/round_button2"
+         app:layout_constraintStart_toStartOf="@id/const_main2"
+         app:layout_constraintEnd_toEndOf="@id/const_main2"
+         app:layout_constraintTop_toTopOf="@id/const_main2"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="10dp">
+
+         <ImageView
+             android:layout_width="18dp"
+             android:layout_height="18dp"
+            android:src="@drawable/camera"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"></ImageView>
+
+         <TextView
+             android:layout_width="234dp"
+             android:layout_height="20dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:layout_weight="700"
+            android:textSize="14dp"
+            android:lineHeight="20dp"
+            android:text="카메라를 선택해 주세요"
+             android:includeFontPadding="false"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="18dp"
+            android:textStyle="bold"></TextView>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:background="@drawable/round_button2"
+          app:layout_constraintStart_toStartOf="@id/const_main2"
+          app:layout_constraintEnd_toEndOf="@id/const_main2"
+          app:layout_constraintTop_toTopOf="@id/const_main2"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="60dp">
+
+         <ImageView
+             android:layout_width="18dp"
+             android:layout_height="18dp"
+             android:src="@drawable/person"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"></ImageView>
+
+         <TextView
+             android:layout_width="234dp"
+             android:layout_height="20dp"
+             android:fontFamily="@font/notosanskr_regular"
+             android:layout_weight="700"
+             android:textSize="14dp"
+             android:lineHeight="20dp"
+             android:text="검색학 대상을 선택해 주세요"
+             android:includeFontPadding="false"
+             android:layout_marginLeft="48dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:layout_marginRight="18dp"
+             android:textColor="#CCCCCC"
+             ></TextView>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:background="@drawable/round_button2"
+          app:layout_constraintStart_toStartOf="@id/const_main2"
+          app:layout_constraintEnd_toEndOf="@id/const_main2"
+          app:layout_constraintTop_toTopOf="@id/const_main2"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="110dp">
+
+         <ImageView
+             android:layout_width="18dp"
+             android:layout_height="18dp"
+             android:src="@drawable/date"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="12dp"
+             android:layout_marginBottom="10dp"></ImageView>
+
+         <TextView
+             android:layout_width="234dp"
+             android:layout_height="20dp"
+             android:fontFamily="@font/notosanskr_regular"
+             android:layout_weight="700"
+             android:textSize="14dp"
+             android:lineHeight="20dp"
+             android:text="날짜와 시간을 선택해 주세요"
+             android:includeFontPadding="false"
+             android:layout_marginLeft="48dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:layout_marginRight="18dp"
+             android:textColor="#CCCCCC"
+             ></TextView>
+
+      </LinearLayout>
+
+      <Button
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="160dp"
+          android:layout_marginRight="15dp"
+          android:background="@drawable/round_button3"
+          android:drawableTop="@drawable/search"
+          app:backgroundTint="#093383"
+          app:layout_constraintEnd_toEndOf="@id/const_main2"
+          app:layout_constraintStart_toStartOf="@id/const_main2"
+          app:layout_constraintTop_toTopOf="@id/const_main2" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+      app:layout_constraintTop_toBottomOf="@id/tv_main2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent">
+      
+      <TextView
+          android:id="@+id/tv_recent"
+          android:layout_width="55dp"
+          android:layout_height="20dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="15dp"
+          android:fontFamily="@font/notosanskr_regular"
+          android:includeFontPadding="false"
+         android:text="최근검색"
+          android:textStyle="bold"
+          android:textSize="14dp"
+          android:lineHeight="20dp"></TextView>
+
+
+      <TextView
+          android:layout_width="206dp"
+          android:layout_height="20dp"
+          android:layout_marginTop="15dp"
+         android:layout_marginBottom="15dp"
+         android:layout_marginLeft="28dp"
+          android:text="@string/main_recentsearch_text"
+          android:textSize="14dp"
+          android:lineHeight="20dp"></TextView>
+
+      <ImageView
+          android:layout_width="13dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="30dp"
+          android:layout_marginTop="21dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="21dp"
+          android:src="@drawable/more"></ImageView>
+
+   </LinearLayout>
+
+<View
+    android:id="@+id/view_mainbottom"
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+   app:layout_constraintTop_toBottomOf="@id/tv_main2"
+   app:layout_constraintStart_toStartOf="parent"
+   android:layout_marginTop="50dp"
+   android:background="#F5F7FA"/>
+
+   <LinearLayout
+       android:id="@+id/linear_bottom"
+       android:layout_width="match_parent"
+       android:layout_height="41dp"
+      app:layout_constraintTop_toBottomOf="@id/view_mainbottom"
+      app:layout_constraintStart_toStartOf="parent">
+      
+      <TextView
+          android:layout_width="256dp"
+          android:layout_height="20dp"
+         android:layout_marginTop="16dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginBottom="5dp"
+         android:fontFamily="@font/notosanskr_regular"
+         android:layout_weight="700"
+         android:textSize="14dp"
+         android:lineHeight="20dp"
+         android:includeFontPadding="false"
+         android:text="사럄/차량이 있는 영상 이미지를 모아봤어요!"
+         android:textStyle="bold"></TextView>
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/linearLayout"
+       android:layout_width="match_parent"
+       android:layout_height="31dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/linear_bottom">
+
+      <TextView
+          android:layout_width="2dp"
+          android:layout_height="2dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/oval_style" />
+
+      <TextView
+          android:layout_width="93dp"
+          android:layout_height="20dp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="6dp"
+          android:fontFamily="@font/notosanskr_regular"
+          android:includeFontPadding="false"
+          android:lineHeight="20dp"
+          android:text="2021년 8월 18일"
+          android:textSize="13dp"
+          android:textStyle="bold" />
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="196dp"
+       android:layout_height="19dp"
+       android:layout_marginStart="104dp"
+       android:layout_marginBottom="172dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent" >
+
+      <ImageView
+          android:layout_width="39dp"
+          android:layout_height="12dp"
+         android:src="@drawable/loading"
+         android:layout_marginTop="3.5dp"></ImageView>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+         android:layout_marginLeft="15dp"
+         android:fontFamily="@font/notosanskr_regular"
+         android:textSize="13dp"
+         android:lineHeight="18.82dp"
+         android:textAlignment="center"
+         android:includeFontPadding="false"
+         android:text="이미지를 불러오고 있어요!"
+         android:textColor="#999"></TextView>
+   </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

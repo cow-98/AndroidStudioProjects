@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">applemarket</string>
+    <string name="detail_text">39.3 ºC</string>
+    <string name="detail_manner"><u>매너온도</u></string>
+</resources>

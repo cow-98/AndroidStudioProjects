@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_cardview"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="6dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/img_sample_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sample1"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="산지 한달 된 선풍기 팝니다"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/main_cardview"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:textSize="16dp"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/tv_main_town"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="서울 서대문구 창천동"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main"
+        app:layout_constraintStart_toEndOf="@id/main_cardview"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_main_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1,000원"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_town"
+        app:layout_constraintStart_toEndOf="@id/main_cardview"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+    
+    <LinearLayout
+        android:id="@+id/img_main_chat_like"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="98dp">
+
+
+        <ImageView
+            android:id="@+id/ic_main_chat"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:src="@drawable/chat"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_main_chat_num"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="25"></TextView>
+
+        <ImageButton
+            android:id="@+id/ic_main_like"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:src="@drawable/like"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFFFF"></ImageButton>
+
+        <TextView
+            android:id="@+id/tv_main_like_num"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="13"></TextView>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

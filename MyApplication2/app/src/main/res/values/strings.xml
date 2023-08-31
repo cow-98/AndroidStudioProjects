@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="textview">안녕하세요</string>
+    <string name="floating_textview">플로팅 페이지 입니다.</string>
+    <string name="btn_text">나가기</string>
+
+
+</resources>
