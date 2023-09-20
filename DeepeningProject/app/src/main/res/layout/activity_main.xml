@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Main.MainActivity"
     android:background="@color/white">
 
     <FrameLayout
@@ -25,5 +25,8 @@
         app:menu="@menu/navi_menu"
         app:itemIconTint="@drawable/menu_click_color"
         app:itemTextColor="@drawable/menu_click_color"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/lightblue"
+        style="@style/Widget.MaterialComponents.NavigationRailView.PrimarySurface"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

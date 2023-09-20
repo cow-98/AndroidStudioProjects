@@ -10,4 +10,5 @@
         android:id="@+id/navi_inbox"
         android:title="보관함"
         android:icon="@drawable/ic_inbox"/>
+
 </menu>
