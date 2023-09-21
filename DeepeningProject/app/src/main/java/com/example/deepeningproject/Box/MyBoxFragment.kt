@@ -6,9 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.deepeningproject.R
+import com.example.deepeningproject.databinding.FragmentMyBoxBinding
+
 
 
 class MyBoxFragment : Fragment() {
+    private var _binding: FragmentMyBoxBinding? = null
+    private val binding get() = _binding!!
 
 
 
@@ -21,8 +25,13 @@ class MyBoxFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        _binding = FragmentMyBoxBinding. inflate(inflater, container, false)
+        return binding.root
+    }
 
-        return inflater.inflate(R.layout.fragment_my_box, container, false)
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     companion object {
