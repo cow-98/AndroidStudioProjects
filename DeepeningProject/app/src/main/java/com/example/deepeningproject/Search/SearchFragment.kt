@@ -74,6 +74,9 @@ class SearchFragment : Fragment() {
         adapter = SearchFragmentAdapter(mContext)
         binding.RecyclerViewSearch.adapter = adapter
         binding.RecyclerViewSearch.itemAnimator = null
+
+        val lls = loadLastSearch(requireContext())
+        binding.mainEtSearch.setText(lls)
     }
 
     private fun setUpListner() {
@@ -88,6 +91,7 @@ class SearchFragment : Fragment() {
             }
 
         }
+        loadLastSearch(requireContext())
     }
 
     private fun saveLastSearch(context: Context, query: String) {
@@ -97,7 +101,7 @@ class SearchFragment : Fragment() {
         edit.apply()
     }
 
-    private fun getLastSearch(context: Context): String? {
+    private fun loadLastSearch(context: Context): String? {
         val pref = context.getSharedPreferences("pref", 0)
         binding.mainEtSearch.setText(pref.getString("name", ""))
         return String()

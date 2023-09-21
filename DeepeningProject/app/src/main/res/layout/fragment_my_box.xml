@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Box.MyBoxFragment">
+    tools:context=".Box.MyBoxFragment"
+    android:id="@+id/myBox_constraintlayout">
 
   <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/RecyclerView_inbox"
